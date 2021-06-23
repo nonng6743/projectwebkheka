@@ -9,7 +9,8 @@ export default function App() {
   const renderSlides = () =>
     [1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
       <div>
-        <h3>Slide {num} tt</h3>
+        <h3> โปรโมชั่นที่ {num}</h3>
+        <br/>
       </div>
     ));
 
