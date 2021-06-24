@@ -3,17 +3,11 @@ import { Grid, Paper } from "@material-ui/core";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 import Slider from "react-slick";
+import { Settings } from "@material-ui/icons";
 
-export default function App() {
-  const renderSlides = () =>
-    [1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-      <div>
-        <h3> โปรโมชั่นที่ {num}</h3>
-        <br/>
-      </div>
-    ));
-
+export default function Slick() {
   return (
     <div className="Slick">
       <Paper elevation={20}>
@@ -23,7 +17,14 @@ export default function App() {
           <br />
         </Grid>
         <Grid>
-          <Slider dots={true}>{renderSlides()}</Slider>
+          <Slider dots={true} {...Settings}>
+            <div>
+              <h1>My Homepage</h1>
+            </div>
+            <div>
+              <h1>111</h1>
+            </div>
+          </Slider>
           <br />
           <br />
         </Grid>
